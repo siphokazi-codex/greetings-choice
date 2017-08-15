@@ -2,15 +2,26 @@
   <h1>Greetings Application</h1><br>
 
   <form class="details" action="/greeted" method="post">
-    <label>Enter name:<label>
-    <input id="username" type="text" name="username" placeholder="Type name to greet"></br><br>
-
-    <input type="radio" name="languange" id="english" value="english"><label>English</label>
-    <input type="radio" name="languange" id="french" value="french"><label>French</label>
-    <input type="radio" name="languange" id="tshivenda" value="tshivenda"><label>Tshivenda</label><br><br>
-
+  <div class="row">
+      <label>Enter name:<label>
+      <input id="username" type="text" name="username" placeholder="Type name to greet"></br><br>
+  </div>
+  <div class="row">
+    <div class="nine columns">
+      <input type="radio" name="languange" id="english" value="english"><label>English</label>
+      <input type="radio" name="languange" id="french" value="french"><label>French</label>
+      <input type="radio" name="languange" id="tshivenda" value="tshivenda"><label>Tshivenda</label><br><br>
+    </div>
+    <div class="three columns">
+      <div class="counter">
+        {{counter}}
+        <br>
+      </div>
+    </div>
+  </div>
+  <div class="row">
     <input class="greet" type="submit" name="" value="Greet Me"><br><br>
-
+  </div>
   {{#if messages.greetMessage}}
     <div class="greetMessage">
       {{messages.greetMessage}}
@@ -20,11 +31,6 @@
    </div>
   {{/if}}
 
-  <div class="counter">
-    {{counter}}
-    <br>
-  </div>
-
   {{#if messages.error}}
     <div class="error">
       {{messages.error}}
@@ -33,7 +39,8 @@
     </div>
   {{/if}}
 
-
-  <a class="view" href="greetings/add">View all names greeted</a>
+  <div class="row">
+    <a class="view" href="greetings/add">View all names greeted</a>
+  </div>
   </form>
 </div>
