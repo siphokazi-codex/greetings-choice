@@ -45,12 +45,20 @@ h1 {
   font-size: 50px;
 }
 
-.add {
-  font-size: 25px
-}
-
 ul {
   font-size: 20px;
+}
+
+a:visited {
+    background-color: #278231;
+}
+
+a:hover {
+    color: #278231;
+}
+
+.add {
+  font-size: 25px;
 }
 
 .hello label {
