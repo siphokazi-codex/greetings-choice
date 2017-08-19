@@ -1,11 +1,15 @@
 {
   "name": "greetings-webapp",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+
+  "engines": {
+    "node": "4.2.4"
+  },
+
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -14,5 +18,17 @@
     "express-flash": "git://github.com/RGBboy/express-flash.git",
     "express-handlebars": "^3.0.0",
     "nodemon": "^1.11.0"
-  }
+  },
+  "devDependencies": {
+    "mocha": "^3.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siphokazi-codex/greetings-choice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/siphokazi-codex/greetings-choice/issues"
+  },
+  "homepage": "https://github.com/siphokazi-codex/greetings-choice#readme",
+  "description": ""
 }

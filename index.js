@@ -34,9 +34,9 @@ app.get('/greetings/counter/:username', greetedRoutes.counter);
 app.get('/greetings/counter', greetedRoutes.counter);
 
 //start the server
-var server = app.listen(3000, function(){
-var host = server.address().address;
+var server = app.listen(process.env.PORT || 3000, function(){
+//var host = server.address().address;
 var port = server.address().port;
 
-  console.log("App listening athttp://%s:%s", host, port);
+  console.log("App listening at http://%s:%s", port);
 });
