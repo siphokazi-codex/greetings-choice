@@ -1,9 +1,6 @@
 module.exports = function(){
 
-  const greetedList = [];
-  const counterMap = {};
-  const nameList = [];
-//  const nameCounter = [];
+  
 
   const getForm = function(req, res){
     res.render('greetings/index');
